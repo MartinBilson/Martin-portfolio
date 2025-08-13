@@ -3,9 +3,9 @@
 A modern, responsive **React-based personal portfolio website** showcasing my work, experience, and skills.
 Built to be fast, mobile-friendly, and easy to update.
 
-## 🌐 Live Demo
+## 🌐 PORTFOLIO VIEW
 
-[**View Portfolio**](https://yourdomain.com)
+[**View Portfolio**](https://martin-portfolio-chi.vercel.app/)
 
 ---
 
