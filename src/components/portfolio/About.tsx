@@ -17,7 +17,7 @@ export const About = () => {
         <div className="animate-enter">
           <h2 className="text-3xl font-bold">About Me</h2>
           <p className="mt-4 text-muted-foreground">
-            With <span className="text-primary font-semibold">4+ years</span> in service delivery, I’ve
+            With <span className="text-primary font-semibold">3+ years</span> in service delivery, I’ve
             improved data quality by <span className="text-primary font-semibold">167%</span> through
             robust analytics pipelines, customized ERP (Odoo) modules end‑to‑end, and contributed to
             <span className="text-primary font-semibold"> Web 3.0</span> and blockchain initiatives.
@@ -38,7 +38,7 @@ export const About = () => {
           <div className="mt-6">
             <h3 className="font-semibold">Startups Founded</h3>
             <div className="mt-3 flex flex-wrap gap-2">
-              {['Web Africa', 'BioBalance'].map((s) => (
+              {['Web Africa', 'BioBalace', 'Fadhili labs'].map((s) => (
                 <span key={s} className="rounded-full border bg-accent px-3 py-1 text-sm text-accent-foreground">
                   {s}
                 </span>
