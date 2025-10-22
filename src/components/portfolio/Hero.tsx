@@ -8,7 +8,7 @@ export const Hero = () => {
         <div className="grid items-center gap-10 md:grid-cols-2">
           <div className="animate-enter">
             <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight">
-              Software Developer, Odoo Consultant, AI Expert and Entrepreneur
+              Software Developer, Odoo Consultant, AI Automation and Entrepreneur
             </h1>
             <p className="mt-4 text-lg md:text-xl text-muted-foreground">
               Transforming data, building solutions, driving results

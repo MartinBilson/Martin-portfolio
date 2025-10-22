@@ -24,9 +24,12 @@ const groups: SkillGroup[] = [
     title: "Frameworks",
     variant: "secondary",
     skills: [
-      { name: "Django", level: 85 },
-      { name: "React", level: 89 },
-      { name: "Phoenix", level: 70 },
+      {name: "FastAPI", level: 80 },
+      {name: "Node.js", level: 87 },
+      {name: "Express.js", level: 83 },
+      {name: "TypeScript", level: 85 },
+      // { name: "Django", level: 85 },
+      { name: "React", level: 89 }
     ],
   },
   {
@@ -42,6 +45,11 @@ const groups: SkillGroup[] = [
       { name: "PostgreSQL", level: 82 },
       { name: "Git", level: 90 },
       { name: "AWS", level: 72 },
+      { name: "Docker", level: 86 },
+      { name: "CI/CD", level: 78 },
+      { name: "NGINX", level: 75 },
+      { name: "Jira", level: 80 },
+      { name: "Agile (Scrum/Kanban)", level: 84 },
     ],
   },
 ];
