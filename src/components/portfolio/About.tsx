@@ -1,12 +1,12 @@
 import aboutImg from "@/assets/about-illustration.jpg";
 
-const companies = [
-  "GS1 Kenya",
+const fullTimeCompanies = ["GS1 Kenya, TrackEdge Technologies"];
+
+const contractCompanies = [
   "Enkaare Group",
   "Web Africa",
   // "Cheza Health",
-  "Track Edge Technologies",
-  "Alfa Core Group",
+  "Eva Bazaar",
   "Wanaag Solutions",
 ];
 
@@ -25,9 +25,20 @@ export const About = () => {
           </p>
 
           <div className="mt-8">
-            <h3 className="font-semibold">Companies</h3>
+            <h3 className="font-semibold">Full-time</h3>
             <div className="mt-3 flex flex-wrap gap-2">
-              {companies.map((c) => (
+              {fullTimeCompanies.map((c) => (
+                <span key={c} className="rounded-full border bg-primary px-3 py-1 text-sm text-primary-foreground">
+                  {c}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          <div className="mt-6">
+            <h3 className="font-semibold">Consulted / Contract</h3>
+            <div className="mt-3 flex flex-wrap gap-2">
+              {contractCompanies.map((c) => (
                 <span key={c} className="rounded-full border bg-secondary px-3 py-1 text-sm text-secondary-foreground">
                   {c}
                 </span>

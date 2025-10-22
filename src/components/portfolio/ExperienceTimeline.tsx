@@ -13,28 +13,20 @@ const data: TimelineItem[] = [
     dates: "2022 – 2024",
     initials: "GK",
     bullets: [
-      "Improved data quality by 167% with robust validation pipelines",
-      "Built KPI dashboards and automated reporting",
+      "Automated data validation and reporting pipelines (Python & SQL), improving data accuracy by 167%",
+      "Contributed in development and did oversight of the GS1 ERP system—optimizing integrations and performance to increase system throughput by 20%",
+      "Fostered knowledge-sharing through biweekly technical demos and lessons-learned sessions"
     ],
   },
-  // {
-  //   company: "Cheza Health",
-  //   role: "Software Developer",
-  //   dates: "2020 – 2021",
-  //   initials: "CH",
-  //   bullets: [
-  //     "Delivered patient-facing web modules with secure auth",
-  //     "Integrated analytics for usage and outcomes tracking",
-  //   ],
-  // },
   {
-    company: "Enkaare Group",
+    company: "Web AFrica && Enkaare Group",
     role: "Block-chain Consultant",
     dates: "2022 – 2024",
     initials: "EG",
     bullets: [
-      "Customized ERP modules for procurement and inventory",
-      "Streamlined workflows and reduced manual processes",
+      "Consulted and developed WEb Africa, delivering a custom web apps and SEO optimized sites for clients",
+      "Built decentralized applications and smart contracts prototypes using web3.js + react",
+      "Contributed to block chain education and advocacy across Africa through workshops and webinars"
     ],
   },
   {
@@ -43,18 +35,9 @@ const data: TimelineItem[] = [
     dates: "2024 – Present",
     initials: "TE",
     bullets: [
-      "Developed performant APIs and dashboards",
-      "Implemented CI/CD and code quality standards",
-    ],
-  },
-  {
-    company: "Alfa Core Group",
-    role: "ERP Consultant",
-    dates: "2024 – 2025",
-    initials: "AC",
-    bullets: [
-      "End‑to‑end Odoo implementation and training",
-      "Data migration and process automation",
+      "Architected and deployed full-stack ERP integrated applications using React, Python and postgreSQL, Enhancing business efficiency by 40%",
+      "Built and consumed RESTful APIs to synchronize Odoo Backend with React for Better scalability and performance",
+      "IMplemented databases indexing, caching and asynchronous processing, reducing server latency by 35%"
     ],
   },
   {
@@ -67,26 +50,16 @@ const data: TimelineItem[] = [
       "Enabled data‑driven decision making across teams",
     ],
   },
-  {
-    company: "Web Africa (Founder)",
-    role: "Founder / Tech Lead",
-    dates: "2022 – Present",
-    initials: "WA",
-    bullets: [
-      "Shipped client projects across web and ERP",
-      "Led architecture, delivery, and partnerships",
-    ],
-  },
-  {
-    company: "BioBalance (Co‑founder)",
-    role: "Co‑founder / CTO",
-    dates: "2024 – Present",
-    initials: "BB",
-    bullets: [
-      "Exploring Web 3.0 & blockchain integrations",
-      "Product strategy and data‑backed iteration",
-    ],
-  },
+  // {
+  //   company: "BioBalance (Co‑founder)",
+  //   role: "Co‑founder / CTO",
+  //   dates: "2024 – Present",
+  //   initials: "BB",
+  //   bullets: [
+  //     "Exploring Web 3.0 & blockchain integrations",
+  //     "Product strategy and data‑backed iteration",
+  //   ],
+  // },
 ];
 
 const LogoBadge = ({ initials }: { initials: string }) => (
