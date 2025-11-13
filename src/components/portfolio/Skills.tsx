@@ -1,103 +1,77 @@
 import { Badge } from "@/components/ui/badge";
-import { Progress } from "@/components/ui/progress";
 
-type Skill = { name: string; level: number };
+type Skill = { name: string; icon?: string };
 
 type SkillGroup = {
   title: string;
-  variant?: "default" | "secondary" | "outline";
   skills: Skill[];
 };
 
 const groups: SkillGroup[] = [
   {
-    title: "Programming",
+    title: "Programming Languages",
     skills: [
-      { name: "Python", level: 92 },
-      { name: "JavaScript", level: 88 },
-      { name: "HTML", level: 90 },
-      { name: "CSS", level: 86 },
-      { name: "SQL", level: 84 },
+      { name: "Python", icon: "🐍" },
+      { name: "JavaScript", icon: "🟨" },
+      { name: "HTML", icon: "🔶" },
+      { name: "CSS", icon: "🔵" },
+      { name: "SQL", icon: "🗄️" },
+      { name: "TypeScript", icon: "🔷" },
     ],
   },
   {
-    title: "Frameworks",
-    variant: "secondary",
+    title: "Frameworks & Libraries",
     skills: [
-      {name: "FastAPI", level: 80 },
-      {name: "Node.js", level: 87 },
-      {name: "Express.js", level: 83 },
-      {name: "TypeScript", level: 85 },
-      // { name: "Django", level: 85 },
-      { name: "React", level: 89 }
+      { name: "React", icon: "⚛️" },
+      { name: "FastAPI", icon: "⚡" },
+      { name: "Node.js", icon: "🟢" },
+      { name: "Express.js", icon: "⚙️" },
     ],
   },
   {
-    title: "ERP",
+    title: "ERP Systems",
     skills: [
-      { name: "Odoo", level: 88 },
+      { name: "Odoo", icon: "📦" },
     ],
   },
   {
-    title: "Tools",
-    variant: "outline",
+    title: "Tools & Technologies",
     skills: [
-      { name: "PostgreSQL", level: 82 },
-      { name: "Git", level: 90 },
-      { name: "AWS", level: 72 },
-      { name: "Docker", level: 86 },
-      { name: "CI/CD", level: 78 },
-      { name: "NGINX", level: 75 },
-      { name: "Jira", level: 80 },
-      { name: "Agile (Scrum/Kanban)", level: 84 },
+      { name: "PostgreSQL", icon: "🐘" },
+      { name: "Git", icon: "🔀" },
+      { name: "AWS", icon: "☁️" },
+      { name: "Docker", icon: "🐳" },
+      { name: "CI/CD", icon: "🔄" },
+      { name: "NGINX", icon: "🚀" },
+      { name: "Jira", icon: "📋" },
+      { name: "Agile (Scrum/Kanban)", icon: "🎯" },
     ],
   },
 ];
-
-const SkillBar = ({ skill }: { skill: Skill }) => {
-  return (
-    <div className="space-y-2">
-      <div className="flex items-center justify-between text-sm">
-        <span className="text-foreground/90">{skill.name}</span>
-        <span className="text-muted-foreground">{skill.level}%</span>
-      </div>
-      <Progress value={skill.level} className="h-2" />
-    </div>
-  );
-};
 
 export const Skills = () => {
   return (
     <section id="skills" className="container py-16 md:py-24">
       <h2 className="text-3xl font-bold">Skills & Technologies</h2>
       <p className="mt-3 text-muted-foreground max-w-2xl">
-        A snapshot of my core stack across programming, frameworks, ERP, and tooling. Each bar indicates practical proficiency and recent usage.
+        I have experience with these technologies
       </p>
 
-      <div className="mt-8 grid gap-6 md:grid-cols-2">
+      <div className="mt-8 rounded-lg border bg-card p-8 shadow-sm animate-enter space-y-8">
         {groups.map((group) => (
-          <article key={group.title} className="rounded-lg border bg-card p-6 shadow-sm animate-enter">
-            <header className="flex items-center justify-between">
-              <h3 className="font-semibold">{group.title}</h3>
-              <div className="hidden md:flex flex-wrap gap-2">
-                {group.skills.map((s) => (
-                  <Badge key={s.name} variant={group.variant || "secondary"}>{s.name}</Badge>
-                ))}
-              </div>
-            </header>
-
-            <div className="mt-5 space-y-4">
-              {group.skills.map((s) => (
-                <SkillBar key={s.name} skill={s} />
+          <div key={group.title}>
+            <h3 className="text-lg font-semibold mb-4 text-foreground">{group.title}</h3>
+            <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+              {group.skills.map((skill) => (
+                <div key={skill.name} className="flex flex-col items-center justify-center gap-2">
+                  <div className="w-16 h-16 rounded-lg border bg-muted flex items-center justify-center text-3xl hover:bg-accent transition-colors cursor-pointer">
+                    {skill.icon}
+                  </div>
+                  <span className="text-xs text-center font-medium text-foreground/80">{skill.name}</span>
+                </div>
               ))}
             </div>
-
-            <div className="md:hidden mt-4 flex flex-wrap gap-2">
-              {group.skills.map((s) => (
-                <Badge key={s.name} variant={group.variant || "secondary"}>{s.name}</Badge>
-              ))}
-            </div>
-          </article>
+          </div>
         ))}
       </div>
     </section>

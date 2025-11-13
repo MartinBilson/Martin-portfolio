@@ -49,7 +49,7 @@ export const About = () => {
           <div className="mt-6">
             <h3 className="font-semibold">Startups Founded</h3>
             <div className="mt-3 flex flex-wrap gap-2">
-              {['Web Africa', 'BioBalace', 'Fadhili labs'].map((s) => (
+              {['BioBalace', 'Fadhili labs'].map((s) => (
                 <span key={s} className="rounded-full border bg-accent px-3 py-1 text-sm text-accent-foreground">
                   {s}
                 </span>
