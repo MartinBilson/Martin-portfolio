@@ -3,6 +3,7 @@ import Hero from "@/components/portfolio/Hero";
 import About from "@/components/portfolio/About";
 import Skills from "@/components/portfolio/Skills";
 import ExperienceTimeline from "@/components/portfolio/ExperienceTimeline";
+import { Mail, Phone, Linkedin, Github, Twitter, ArrowUp } from "lucide-react";
 
 const Index = () => {
   return (
@@ -90,16 +91,34 @@ const Index = () => {
             📱 +254 748 263 148 | +254 748 141 200
           </a>
 
-          {/* Optional: Social Links */}
-          <div className="flex gap-6 mt-4">
-            <a href="https://www.linkedin.com/in/martin-githae-11781b20a/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
-              LinkedIn
+          {/* Optional: Social Links with Icons */}
+          <div className="flex gap-6 mt-6">
+            <a 
+              href="https://www.linkedin.com/in/martin-githae-11781b20a/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="hover:text-primary transition-colors"
+              title="LinkedIn"
+            >
+              <Linkedin size={24} />
             </a>
-            <a href="https://github.com/martinbilson" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
-              GitHub
+            <a 
+              href="https://github.com/martinbilson" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="hover:text-primary transition-colors"
+              title="GitHub"
+            >
+              <Github size={24} />
             </a>
-            <a href="https://twitter.com/YOUR-HANDLE" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
-              Twitter
+            <a 
+              href="https://twitter.com/YOUR-HANDLE" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="hover:text-primary transition-colors"
+              title="Twitter"
+            >
+              <Twitter size={24} />
             </a>
           </div>
         </div>
@@ -110,7 +129,10 @@ const Index = () => {
       <footer className="border-t">
         <div className="container py-8 text-sm text-muted-foreground flex items-center justify-between">
           <span>© {new Date().getFullYear()} Martin Githae Maina</span>
-          <a href="#home" className="story-link">Back to top</a>
+          <a href="#home" className="story-link flex items-center gap-2 hover:text-primary transition-colors">
+            Back to top
+            <ArrowUp size={18} />
+          </a>
         </div>
       </footer>
     </div>
