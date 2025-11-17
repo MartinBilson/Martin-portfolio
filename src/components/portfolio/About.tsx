@@ -16,13 +16,34 @@ export const About = () => {
       <div className="grid items-center gap-10 md:grid-cols-2">
         <div className="animate-enter">
           <h2 className="text-3xl font-bold">About Me</h2>
-          <p className="mt-4 text-muted-foreground">
-            With <span className="text-primary font-semibold">3+ years</span> in service delivery, I’ve
-            improved data quality by <span className="text-primary font-semibold">167%</span> through
-            robust analytics pipelines, customized ERP (Odoo) modules end‑to‑end, and contributed to
-            <span className="text-primary font-semibold"> Web 3.0</span> and blockchain initiatives.
-            I combine development, analytics, and business operations to ship solutions that scale.
+          <div className="space-y-6 text-muted-foreground">
+          <p>
+            I’m a developer who thinks in systems. With 
+            <span className="text-primary font-semibold"> 3+ years </span>
+            of experience, I’ve built and delivered solutions across ERPs, data pipelines,
+            and <span className="text-primary font-semibold">Web3</span> infrastructure.
           </p>
+
+          <p>
+            My work includes improving data quality by 
+            <span className="text-primary font-semibold"> 167% </span>
+            through automated analytics workflows, and building custom 
+            <span className="text-primary font-semibold"> Odoo </span>
+            modules that eliminated manual work across multiple teams.
+          </p>
+
+          <div className="border-l-4 border-primary pl-4 py-2 space-y-2">
+            <p>
+              I focus on clean architecture, scalable systems, and solving real business problems — 
+              not just writing code.
+            </p>
+            <p>
+              I bridge engineering and operations, take ownership of outcomes, and thrive in teams 
+              that value clarity, high standards, and long-term thinking.
+            </p>
+          </div>
+        </div>
+
 
           <div className="mt-8">
             <h3 className="font-semibold">Full-time</h3>
